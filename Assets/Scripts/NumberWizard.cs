@@ -14,10 +14,20 @@ public class NumberWizard : MonoBehaviour {
 
 		print ("The highest number you can pick is " + max);
 		print ("The lowest number you can pick is " + min);
+
+		print ("Is the number higher or lower than 500?");
+		print ("Up arrow for higher, down for lower, enter for equals.");
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+	{
+		if (Input.GetKeyDown (KeyCode.UpArrow)) {
+			print ("Up arrow pressed");
+		}
+
+		if (Input.GetKeyDown (KeyCode.DownArrow)) {
+			print ("Down arrow pressed");
+		}
 	}
 }
